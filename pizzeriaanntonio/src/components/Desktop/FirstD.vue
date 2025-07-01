@@ -25,15 +25,6 @@
     text-align: center;
 }
 
-/* Responsive za manje ekrane */
-@media (max-width: 600px) {
-    .title {
-        font-size: 2.5rem;
-    }
-    .firstD {
-        padding: 0 2rem;
-    }
-}
 </style>
 
 <script setup>

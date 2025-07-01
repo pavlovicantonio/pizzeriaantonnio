@@ -1,12 +1,12 @@
 <template>
-  <v-sheet class="firstD d-flex align-center justify-center">
+  <v-sheet class="firstD d-flex justify-center">
     <v-sheet class="secondD d-flex flex-row pa-6 ga-6">
 
       <!-- Lijevi dio: Meni -->
       <v-container class="pa-0 d-flex justify-center flex-column text-container" >
-        <h1 style="font-family: 'Great Vibes', cursive; color: #af9458;">Probajte nešto novo</h1>
+        <h1 style="font-family: 'Great Vibes', cursive; color: #af9458;">{{ t('tryNew') }}</h1>
         <p style="font-family: 'Cinzel', serif; color: white;">
-          Nova pizzeria u Šišanu donosi dašak Napulja ravno na vaš stol! Naše napoletanske pizze rade se s posebnom pažnjom – od dugotrajne fermentacije tijesta do pečenja u peći na drva. Osim pizze, u ponudi su i ukusni sendviči te domaći deserti, idealni za svaki trenutak dana. Uživajte u opuštenom ambijentu uz laganu glazbu i prijateljsku atmosferu – savršeno mjesto za bijeg od svakodnevice.
+            {{ t('welcome1') }}
         </p>
       </v-container>
 
@@ -41,15 +41,19 @@
   height: 85vh;
   width: 98vw;
   overflow-y: auto;
-
-  /* desktop layout: horizontal */
-  flex-direction: row;
+  align-items: center; /* dodatno */
+  display: flex;
+  flex-direction: row; /* desktop */
 }
 
-/* Tekst i slika širine */
+/* Širine za desktop */
 .text-container {
   width: 50%;
   padding-right: 1rem;
+}
+.text-container p{
+    font-size: 1.3rem;
+    min-height: 4em; /* prilagodi prema potrebi */
 }
 .image-container {
   width: 50%;
@@ -61,44 +65,22 @@
   color: #af9458;
 }
 
-/* Prilagodba fontova za desktop */
+/* Sakrij vertikalni divider na mobilnim */
+.divider-desktop {
+  display: block;
+}
+
+/* FONT veličine za desktop */
 .text-container h1 {
   font-size: 3.5rem;
 }
 .text-container p {
   font-size: 1.3rem;
 }
-
-/* --- MOBILE --- */
-@media (max-width: 768px) {
-  .secondD {
-    /* vertikalno slaganje */
-    flex-direction: column;
-    height: auto;
-  }
-
-  .text-container,
-  .image-container {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-
-  /* Sakrij vertikalni divider na mobilnim */
-  .divider-desktop {
-    display: none;
-  }
-
-  .text-container h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .text-container p {
-    font-size: 1rem;
-  }
-
-  .image-container {
-    margin-top: 1rem;
-  }
-}
 </style>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>

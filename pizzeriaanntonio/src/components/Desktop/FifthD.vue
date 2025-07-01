@@ -45,13 +45,13 @@ import { computed } from 'vue'
 const { t } = useI18n()
 
 const days = [
-  { key: 'monday', hours: '15:00 – 23:00' },
+  { key: 'monday', hours: '14:00 – 22:00' },
   { key: 'tuesday', hours: 'Closed' },
-  { key: 'wednesday', hours: '15:00 – 23:00' },
-  { key: 'thursday', hours: '15:00 – 23:00' },
-  { key: 'friday', hours: '15:00 – 23:00' },
-  { key: 'saturday', hours: '15:00 – 23:00' },
-  { key: 'sunday', hours: '15:00 – 23:00' },
+  { key: 'wednesday', hours: '12:00 – 22:00' },
+  { key: 'thursday', hours: '14:00 – 22:00' },
+  { key: 'friday', hours: '12:00 – 22:00' },
+  { key: 'saturday', hours: '14:00 – 22:00' },
+  { key: 'sunday', hours: '14:00 – 22:00' },
 ]
 
 const translatedDays = computed(() =>

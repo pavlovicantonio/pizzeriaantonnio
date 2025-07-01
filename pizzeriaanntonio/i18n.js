@@ -9,6 +9,8 @@ export const messages = {
         contact: 'Kontakt',
         gallery: 'Galerija',
         welcome: 'Dobrodošli u Pizzeriju Antonnio!',
+        tryNew: 'Probajte nešto novo!',
+        welcome1: "Dobrodošli u novu pizzeriju u Šišanu, gdje se tradicija Napulja susreće s modernim okusima. Uživajte u napoletanskim pizzama, svježim sendvičima i domaćim desertima – sve u ugodnom ambijentu s opuštenom atmosferom.",
         days: {
             monday: 'Ponedjeljak',
             tuesday: 'Utorak',
@@ -24,7 +26,27 @@ export const messages = {
         available: 'Dostupne',
         cash: 'Gotovina',
         card: 'Kartica',
-
+        pets: "Kućni ljubimci",
+        wifi: "Wi-Fi",
+        accessibility: "Pristupačnost",
+        airConditioning: "Klima",
+        takeaway: "Hrana za ponijeti",
+        seating: "Sjedenje vani",
+        reservations: "Rezervacije",
+        title_part1: "Sve",
+        title_part2: "na jednom mjestu",
+        contact_find_us: "Pronađite nas",
+        contact_send_email: "Pošaljite nam poruku e-pošte",
+        contact_call_us: "Nazovite nas",
+        contact_send_message: "Pošaljite nam poruku",
+        form: {
+            name: "Vaše ime",
+            email: "Vaša adresa e-pošte",
+            phone: "Vaš telefon",
+            subject: "Predmet",
+            message: "Vaša poruka",
+            send: "Pošalji"
+        }
     },
     en: {
         workHours: 'Work Hours',
@@ -33,6 +55,9 @@ export const messages = {
         location: 'Location',
         contact: 'Contact',
         welcome: 'Welcome to Pizzeria Antonnio!',
+        tryNew: 'Try something new!',
+        welcome1:
+            "Welcome to the new pizzeria in Šišan, where Neapolitan tradition meets modern flavors. Enjoy authentic pizzas, fresh sandwiches, and homemade desserts – all in a cozy, relaxed atmosphere.",
         gallery: 'Gallery',
         days: {
             monday: 'Monday',
@@ -49,7 +74,27 @@ export const messages = {
         available: 'Available',
         cash: 'Cash',
         card: 'Card',
-
+        pets: "Pets",
+        wifi: "Wi-Fi",
+        accessibility: "Accessibility",
+        airConditioning: "Air Conditioning",
+        takeaway: "Takeaway",
+        seating: "Outdoor Seating",
+        reservations: "Reservations",
+        title_part1: "Everything",
+        title_part2: "in one place",
+        contact_find_us: "Find us",
+        contact_send_email: "Send us an email",
+        contact_call_us: "Call us",
+        contact_send_message: "Send us a message",
+        form: {
+            name: "Your name",
+            email: "Your email address",
+            phone: "Your phone number",
+            subject: "Subject",
+            message: "Your message",
+            send: "Send"
+        }
     },
     de: {
         workHours: 'Öffnungszeiten',
@@ -58,6 +103,8 @@ export const messages = {
         location: 'Standort',
         contact: 'Kontakt',
         welcome: 'Willkommen in der Pizzeria Antonnio!',
+        tryNew: 'Probieren Sie etwas Neues!',
+        welcome1: "Willkommen in der neuen Pizzeria in Šišan, wo neapolitanische Tradition auf moderne Aromen trifft. Genießen Sie authentische Pizzen, frische Sandwiches und hausgemachte Desserts – alles in entspannter, gemütlicher Atmosphäre.",
         gallery: 'Galerie',
         days: {
             monday: 'Montag',
@@ -74,6 +121,27 @@ export const messages = {
         available: 'Verfügbare',
         cash: 'Bargeld',
         card: 'Karte',
+        pets: "Haustiere",
+        wifi: "Wi-fi",
+        accessibility: "Barrierefreiheit",
+        airConditioning: "Klimaanlage",
+        takeaway: "Zum Mitnehmen",
+        seating: "Sitzplätze im Freien",
+        reservations: "Reservierungen",
+        title_part1: "Alles",
+        title_part2: "an einem Ort",
+        contact_find_us: "Finden Sie uns",
+        contact_send_email: "Senden Sie uns eine E-Mail",
+        contact_call_us: "Rufen Sie uns an",
+        contact_send_message: "Senden Sie uns eine Nachricht",
+        form: {
+            name: "Ihr Name",
+            email: "Ihre E-Mail-Adresse",
+            phone: "Ihre Telefonnummer",
+            subject: "Betreff",
+            message: "Ihre Nachricht",
+            send: "Senden"
+        }
     },
     it: {
         workHours: 'Orari di apertura',
@@ -82,6 +150,8 @@ export const messages = {
         location: 'Posizione',
         contact: 'Contatto',
         welcome: 'Benvenuti alla Pizzeria Antonnio!',
+        tryNew: 'Prova qualcosa di nuovo!',
+        welcome1: "Benvenuti nella nuova pizzeria a Šišan, dove la tradizione napoletana incontra i sapori moderni. Gustate pizze autentiche, panini freschi e dolci fatti in casa – tutto in un'atmosfera accogliente e rilassata.",
         gallery: 'Galleria',
         days: {
             monday: 'Lunedì',
@@ -98,6 +168,27 @@ export const messages = {
         available: 'Disponibili',
         cash: 'Contanti',
         card: 'Carta',
+        pets: "Animali domestici",
+        wifi: "Wi-Fi",
+        accessibility: "Accessibilità",
+        airConditioning: "Aria condizionata",
+        takeaway: "Da asporto",
+        seating: "Posti a sedere all'aperto",
+        reservations: "Prenotazioni",
+        title_part1: "Tutto",
+        title_part2: "in un unico posto",
+        contact_find_us: "Trovaci",
+        contact_send_email: "Inviaci un'e-mail",
+        contact_call_us: "Chiamaci",
+        contact_send_message: "Inviaci un messaggio",
+        form: {
+            name: "Il tuo nome",
+            email: "Il tuo indirizzo e-mail",
+            phone: "Il tuo numero di telefono",
+            subject: "Oggetto",
+            message: "Il tuo messaggio",
+            send: "Invia"
+        }
     },
 }
 
