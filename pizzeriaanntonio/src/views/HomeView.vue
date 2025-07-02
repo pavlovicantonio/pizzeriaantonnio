@@ -2,27 +2,27 @@
   <v-sheet>
     <v-sheet v-if="$vuetify.display.mdAndUp">
       <MenuD />
-      <FirstD />
-      <SecondD />
-      <ThirdD />
-      <FourthD />
-      <FifthD />
-      <SixthD />
-      <SeventhD />
-      <EighthD />
+      <FirstD id="home" />
+      <SecondD id="about" />
+      <ThirdD id="find" />
+      <FourthD id="gallery" />
+      <FifthD id="hours" />
+      <SixthD id="menu" />
+      <SeventhD id="services" />
+      <EighthD id="contact" />
       <FooterD />
     </v-sheet>
 
     <v-sheet v-else>
       <MenuM />
-      <FirstM />
-      <SecondM />
-      <ThirdM />
-      <FourthM />
-      <FifthM />
-      <SixthM />
-      <SeventhM />
-      <EighthM />
+      <FirstM id="home" />
+      <SecondM id="about" />
+      <ThirdM id="find" />
+      <FourthM id="gallery" />
+      <FifthM id="hours" />
+      <SixthM id="menu" />
+      <SeventhM id="services" />
+      <EighthM id="contact" />
       <FooterM />
     </v-sheet>
   </v-sheet>

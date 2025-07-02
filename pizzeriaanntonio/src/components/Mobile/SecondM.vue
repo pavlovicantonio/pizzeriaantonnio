@@ -1,19 +1,14 @@
 <template>
   <v-sheet class="secondM">
-
-    <div class="content-wrapper">
+    <div class="content-wrapper mt-10 mb-10">
       <!-- Tekstualni dio -->
       <v-container class="pa-0 text-center text-container">
-        <h1 class="heading">{{ t('tryNew') }}</h1>
-        <p class="paragraph">{{ t('welcome1') }}</p>
+        <h1 class="heading">{{ t("tryNew") }}</h1>
+        <p class="paragraph">{{ t("welcome1") }}</p>
       </v-container>
 
       <!-- Horizontalni divider -->
-      <v-divider
-        class="my-4 horizontal-divider"
-        :thickness="4"
-        :opacity="40"
-      />
+      <v-divider class="my-4 horizontal-divider" :thickness="4" :opacity="40" />
 
       <!-- Slika ispod teksta -->
       <v-img
@@ -24,28 +19,27 @@
         class="image-container"
       />
     </div>
-
   </v-sheet>
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
+import { useI18n } from "vue-i18n";
 
-const { t } = useI18n()
+const { t } = useI18n();
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 
 .secondM {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: #222;
 
   display: flex;
-  justify-content: center;  /* horizontalno centriranje */
-  align-items: center;      /* vertikalno centriranje */
+  justify-content: center; /* horizontalno centriranje */
+  align-items: center; /* vertikalno centriranje */
   box-sizing: border-box;
   text-align: center;
 }
@@ -53,17 +47,17 @@ const { t } = useI18n()
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* horizontalno centriranje sadržaja unutar wrappera */
+  align-items: center; /* horizontalno centriranje sadržaja unutar wrappera */
 }
 
 .heading {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   color: #af9458;
   font-size: 2.5rem;
 }
 
 .paragraph {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   color: white;
   font-size: 1.1rem;
   margin-top: 0.5rem;
@@ -85,10 +79,10 @@ const { t } = useI18n()
 @media (min-width: 600px) and (max-width: 900px) {
   .paragraph {
     font-size: 1.7rem; /* veći font za tablet */
-    line-height: 1.6;  /* da bude ugodniji za čitanje */
+    line-height: 1.6; /* da bude ugodniji za čitanje */
   }
-  .heading{
-    font-size:4.5rem;
+  .heading {
+    font-size: 4.5rem;
   }
 }
 </style>
