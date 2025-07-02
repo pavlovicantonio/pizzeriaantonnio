@@ -49,7 +49,7 @@ const days = [
   { key: 'tuesday', hours: 'Closed' },
   { key: 'wednesday', hours: '12:00 – 22:00' },
   { key: 'thursday', hours: '14:00 – 22:00' },
-  { key: 'friday', hours: '12:00 – 22:00' },
+  { key: 'friday', hours: '14:00 – 22:00' },
   { key: 'saturday', hours: '14:00 – 22:00' },
   { key: 'sunday', hours: '14:00 – 22:00' },
 ]
