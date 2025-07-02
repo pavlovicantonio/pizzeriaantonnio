@@ -18,7 +18,7 @@ export default {
 
 <style>
 [id] {
-  scroll-margin-top: 25px; /* prilagodi visini app-bara */
+  scroll-margin-top: 10vh; /* prilagodi visini app-bara */
 }
 
 @media (min-width: 768px) {
