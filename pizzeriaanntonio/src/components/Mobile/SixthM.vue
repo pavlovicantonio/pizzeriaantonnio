@@ -9,13 +9,18 @@
       style="background-color: #222; padding: 32px; gap: 24px"
     >
       <h2 style="width: 100%; color: white; font-family: 'Cinzel', serif">
-        Pizze
+        Pizza
       </h2>
-      <div v-for="pizza in pizzas" :key="pizza.name" class="pizza-card">
-        <v-img :src="pizza.image" :alt="pizza.name" height="200" cover></v-img>
+      <div v-for="pizza in pizzas" :key="pizza.key" class="pizza-card">
+        <v-img
+          :src="pizza.image"
+          :alt="t(`pizzas.${pizza.key}.name`)"
+          height="200"
+          cover
+        />
         <div class="pizza-info">
-          <h3>{{ pizza.name }}</h3>
-          <p>{{ pizza.description }}</p>
+          <h3>{{ t(`pizza.${pizza.key}.name`) }}</h3>
+          <p>{{ t(`pizza.${pizza.key}.desc`) }}</p>
           <span class="price">{{ pizza.price }} €</span>
         </div>
       </div>
@@ -26,22 +31,24 @@
       style="background-color: #222; padding: 32px; gap: 24px"
     >
       <h2 style="width: 100%; color: white; font-family: 'Cinzel', serif">
-        Sendviči
+        {{ t("other") }}
       </h2>
       <div
         v-for="sandwich in sandwiches"
-        :key="sandwich.name"
+        :key="sandwich.key"
         class="pizza-card"
       >
-        <v-img
-          :src="sandwich.image"
-          :alt="sandwich.name"
-          height="200"
-          cover
-        ></v-img>
+        <v-img :src="sandwich.image" height="200" cover></v-img>
         <div class="pizza-info">
-          <h3>{{ sandwich.name }}</h3>
-          <p>{{ sandwich.description }}</p>
+          <h3>{{ t(`sandwich.${sandwich.key}.name`) }}</h3>
+          <p
+            v-if="
+              t(`sandwich.${sandwich.key}.desc`) !==
+              `sandwich.${sandwich.key}.desc`
+            "
+          >
+            {{ t(`sandwich.${sandwich.key}.desc`) }}
+          </p>
           <span class="price">{{ sandwich.price }} €</span>
         </div>
       </div>
@@ -50,50 +57,126 @@
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 const pizzas = [
   {
-    name: "Cock-a-Doodle Bacon",
-    description:
-      "Creamy garlic Parmesan sauce, grilled chicken, smoked bacon, diced Roma tomatoes, Parmesan crust",
-    price: "10.50",
+    key: "margarita_pizza",
+    price: "8",
     image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
   },
   {
-    name: "Pretzel Piggy",
-    description:
-      "Garlic Parmesan sauce, mushrooms, bacon, spinach, pretzel crust edge",
-    price: "11.00",
-    image: "https://www.dominos.co.in/files/items/Non-Veg_Supreme.jpg",
+    key: "marinara_pizza",
+    price: "7",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
   },
   {
-    name: "Giddy-Up BBQ Chicken",
-    description:
-      "BBQ sauce, grilled chicken, fresh red onions, cheddar on the edge",
-    price: "10.75",
-    image: "https://www.dominos.co.in/files/items/Pepper_Barbeque_&_Onion.jpg",
+    key: "gustosa_pizza",
+    price: "9",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
   },
   {
-    name: "Margherita",
-    description: "Tomato, mozzarella, and fresh basil — a timeless classic.",
+    key: "cottina_pizza",
     price: "8.50",
-    image: "https://www.dominos.co.in/files/items/Margherit.jpg",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "capricciosa_pizza",
+    price: "9",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "vegetariana_pizza",
+    price: "10",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "dalmatina_pizza",
+    price: "11",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "fantasia_pizza",
+    price: "11",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "rustica_pizza",
+    price: "10",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "diavola_pizza",
+    price: "10",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "tonnina_pizza",
+    price: "10",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "dolce_vita_pizza",
+    price: "12",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "quatro_formaggi_pizza",
+    price: "9",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "sapori_di_mare_pizza",
+    price: "12",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "bianca_divina_pizza",
+    price: "11",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "saporita_pizza",
+    price: "11",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "smoked_pizza",
+    price: "12",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "perla_di_bosco_pizza",
+    price: "13",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "siciliana_pizza",
+    price: "12",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
   },
 ];
 
 const sandwiches = [
   {
-    name: "Classic Club",
-    description:
-      "Turkey, ham, bacon, lettuce, tomato, and mayo on toasted bread.",
-    price: "6.50",
-    image: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+    key: "sandwich_italiano",
+    price: "10",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
   },
   {
-    name: "Italian Sub",
-    description:
-      "Salami, ham, mortadella, provolone, lettuce, tomato, and Italian dressing.",
-    price: "7.00",
-    image: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+    key: "sandwich_prosciutto",
+    price: "9",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "lasagne",
+    price: "12",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
+  },
+  {
+    key: "menu_daily",
+    price: "12",
+    image: "https://www.dominos.co.in/files/items/Chicken_Golden_Delight.jpg",
   },
 ];
 </script>
