@@ -6,13 +6,23 @@
         <v-btn icon variant="text" href="https://facebook.com" target="_blank">
           <v-icon>mdi-facebook</v-icon>
         </v-btn>
-        <v-btn icon variant="text" href="https://gmail.com" target="_blank">
+        <v-btn
+          icon
+          variant="text"
+          :href="`mailto:sainantonniodoo@mail.com?subject=Ask us anything! prijevoda&body=Feel free to ask anything you want to know`"
+          target="_blank"
+        >
           <v-icon>mdi-gmail</v-icon>
         </v-btn>
         <v-btn icon variant="text" href="https://whatsapp.com" target="_blank">
           <v-icon>mdi-whatsapp</v-icon>
         </v-btn>
-        <v-btn icon variant="text" href="https://instagram.com" target="_blank">
+        <v-btn
+          icon
+          variant="text"
+          href="https://www.instagram.com/pizzeria.antonnio/"
+          target="_blank"
+        >
           <v-icon>mdi-instagram</v-icon>
         </v-btn>
       </div>
@@ -33,7 +43,12 @@
 
       <!-- Napomena -->
       <p class="text-caption text-teal-lighten-3">
-        Dizajnirao APWebing. Sva prava pridržana.
+        <a
+          href="https://apwebing.netlify.app"
+          class="text-teal-lighten-3"
+          target="_blank"
+          >Dizajnirao APWebing. Sva prava pridržana.</a
+        >
       </p>
     </v-container>
   </v-footer>

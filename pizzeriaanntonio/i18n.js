@@ -241,7 +241,7 @@ export const messages = {
                 desc: "Mozzarella, mortadella, pistachio pesto, burrata"
             }
         },
-        other_food: {
+        sandwich: {
             sandwich_italiano: {
                 name: "Italiano Sandwich",
                 desc: "Burrata, mortadella, pistachios"
@@ -383,7 +383,7 @@ export const messages = {
                 desc: 'Mozzarella, Mortadella, Pistazienpesto, Burrata',
             }
         },
-        other_food: {
+        sandwich: {
             sandwich_italiano: {
                 name: 'Sandwich Italiano',
                 desc: 'Burrata, Mortadella, Pistazien',
@@ -525,7 +525,7 @@ export const messages = {
                 desc: 'Mozzarella, mortadella, pesto di pistacchio, burrata',
             }
         },
-        other_food: {
+        sandwich: {
             sandwich_italiano: {
                 name: 'Panino Italiano',
                 desc: 'Burrata, mortadella, pistacchi',
