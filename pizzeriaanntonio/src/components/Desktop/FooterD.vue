@@ -16,7 +16,7 @@
           icon
           class="mx-2"
           variant="text"
-          :href="`mailto:sainantonniodoo@mail.com?subject=Ask us anything! prijevoda&body=Feel free to ask anything you want to know`"
+          :href="`mailto:sainantonniodoo@mail.com?subject=Ask us anything!&body=Feel free to ask anything you want to know`"
           target="_blank"
         >
           <v-icon>mdi-gmail</v-icon>
